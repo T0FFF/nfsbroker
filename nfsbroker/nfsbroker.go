@@ -103,7 +103,7 @@ func (b *Broker) Services(_ context.Context) []brokerapi.Service {
 			{
 				Name:        "Existing",
 				ID:          "Existing",
-				Description: "This service have to instantiate in command line with specific parameters.",
+				Description: "This service has to be instantiated in command line with specific parameters.",
 			},
 		},
 	}}

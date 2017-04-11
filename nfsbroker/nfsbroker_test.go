@@ -68,7 +68,7 @@ var _ = Describe("Broker", func() {
 				Expect(result.Plans[0].Name).To(Equal("Existing"))
 				Expect(result.Plans[0].ID).To(Equal("Existing"))
 				//Expect(result.Plans[0].Description).To(Equal("A preexisting filesystem"))
-				Expect(result.Plans[0].Description).To(Equal("This service have to instantiate in command line with specific parameters."))
+				Expect(result.Plans[0].Description).To(Equal("This service has to be instantiated in command line with specific parameters."))
 			})
 		})
 
