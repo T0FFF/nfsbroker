@@ -92,7 +92,8 @@ func (b *Broker) Services(_ context.Context) []brokerapi.Service {
 	return []brokerapi.Service{{
 		ID:            b.static.ServiceId,
 		Name:          b.static.ServiceName,
-		Description:   "Existing NFSv3 volumes (see: https://code.cloudfoundry.org/nfs-volume-release/)",
+		//Description:   "Existing NFSv3 volumes (see: https://code.cloudfoundry.org/nfs-volume-release/)",
+		Description:   "Please contact the support team (support.fap@orange.com), if you need help to use this service (NFSv3 volumes).",
 		Bindable:      true,
 		PlanUpdatable: false,
 		Tags:          []string{"nfs"},
@@ -102,7 +103,7 @@ func (b *Broker) Services(_ context.Context) []brokerapi.Service {
 			{
 				Name:        "Existing",
 				ID:          "Existing",
-				Description: "A preexisting filesystem",
+				Description: "This service have to instantiate in command line with specific parameters.",
 			},
 		},
 	}}

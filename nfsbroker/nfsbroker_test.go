@@ -58,7 +58,8 @@ var _ = Describe("Broker", func() {
 				result := broker.Services(ctx)[0]
 				Expect(result.ID).To(Equal("service-id"))
 				Expect(result.Name).To(Equal("service-name"))
-				Expect(result.Description).To(Equal("Existing NFSv3 volumes (see: https://code.cloudfoundry.org/nfs-volume-release/)"))
+				//Expect(result.Description).To(Equal("Existing NFSv3 volumes (see: https://code.cloudfoundry.org/nfs-volume-release/)"))
+				Expect(result.Description).To(Equal("Please contact the support team (support.fap@orange.com), if you need help to use this service (NFSv3 volumes)."))
 				Expect(result.Bindable).To(Equal(true))
 				Expect(result.PlanUpdatable).To(Equal(false))
 				Expect(result.Tags).To(ContainElement("nfs"))
@@ -66,7 +67,8 @@ var _ = Describe("Broker", func() {
 
 				Expect(result.Plans[0].Name).To(Equal("Existing"))
 				Expect(result.Plans[0].ID).To(Equal("Existing"))
-				Expect(result.Plans[0].Description).To(Equal("A preexisting filesystem"))
+				//Expect(result.Plans[0].Description).To(Equal("A preexisting filesystem"))
+				Expect(result.Plans[0].Description).To(Equal("This service have to instantiate in command line with specific parameters."))
 			})
 		})
 
