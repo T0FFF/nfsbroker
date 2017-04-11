@@ -1,2 +1,2 @@
 # nfsbroker
-[CLZ] NFS broker for existing repos
+NFS broker for existing repos

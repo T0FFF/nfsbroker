@@ -206,7 +206,7 @@ var _ = Describe("nfsbroker Main", func() {
 				Expect(catalog.Services[0].ID).To(Equal("someguid"))
 				Expect(catalog.Services[0].Plans[0].ID).To(Equal("Existing"))
 				Expect(catalog.Services[0].Plans[0].Name).To(Equal("Existing"))
-				Expect(catalog.Services[0].Plans[0].Description).To(Equal("A preexisting filesystem"))
+				Expect(catalog.Services[0].Plans[0].Description).To(Equal("This service has to be instantiated in command line with specific parameters."))
 			})
 		})
 	})
